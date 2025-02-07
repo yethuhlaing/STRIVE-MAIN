@@ -1,0 +1,337 @@
+/*----------------------------------------------------------*/
+/* NAVIGATION BAR */
+/*----------------------------------------------------------*/
+
+/* walter white */
+#walter_white {
+    position: fixed;
+    z-index: 97;
+    /*background-color: var(--dark-text-color);*/
+    background: linear-gradient(var(--dark-text-color), rgba(0,0,0,0));
+    height: 0;
+    width: 100%;
+    transition: .2s;
+}
+
+#walter_white.active {
+    height: 80px;
+}
+
+/* desktop buttons */
+.desktop-nav {
+    position: fixed;
+    z-index: 98;
+    width: 90%;
+    left: 5%;
+    top: 2%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    transition: .7s;
+}
+
+.desktop-nav.active {
+    /*top: -80px;*/
+    top: 1%;
+    opacity: .1;
+}
+
+.desktop-nav:hover {
+    opacity: 1;
+}
+
+.desktop-nav-logo-container {
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+.desktop-nav-logo-container img {
+    height: 32px;
+}
+
+.desktop-nav-buttons-container ul {
+    margin: 0 -30px 0 0;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+.desktop-nav-buttons-container ul li {
+    position: relative;
+    display: inline-block;
+    padding: 0 30px;
+}
+
+.desktop-nav-buttons-container ul li a, .desktop-nav-buttons-container ul li p {
+    color: var(--light-text-color);
+    cursor: pointer;
+    text-transform: uppercase;
+    font-family: var(--font-main-title);
+    font-size: 1.15em;
+    font-weight: 400;
+    letter-spacing: 0.05em;
+    transition: .3s;
+}
+
+.desktop-nav-buttons-container ul li a:hover {
+    opacity: .5;
+}
+
+.desktop-nav-buttons-container .current {
+    opacity: 0.5;
+}
+
+.desktop-nav .changed {
+    color: var(--dark-text-color);
+}
+
+.desktop-nav-buttons-container #contact_btn {
+    background: var(--gradient-color);
+    border-radius: 4px;
+    text-transform: capitalize;
+}
+
+.desktop-nav-buttons-container #contact_btn:hover {
+    color: var(--dark-text-color);
+    background: var(--light-text-color);
+    padding: 14px 30px 12px 30px;
+    opacity: 1;
+}
+
+.desktop-nav-buttons-container #contact_btn-2 {
+    background: var(--gradient-color);
+    border-radius: 6px;
+    text-transform: capitalize;
+}
+
+.desktop-nav-buttons-container #contact_btn-2:hover {
+    color: var(--dark-text-color);
+    background: var(--light-text-color);
+    padding: 12px 30px;
+    opacity: 1;
+    box-shadow: inset 0 0 0 2px var(--dark-text-color);
+}
+
+.desktop-nav-buttons-container .nav-second-color {
+    color: var(--light-text-color);
+    font-weight: 400;
+}
+
+.nav-apply-button {
+	overflow: hidden;
+    margin-top: 5px;
+    padding: 14px 30px 12px 30px;
+    border-radius: 6px;
+	color: var(--light-text-color);
+    background: var(--gradient-color);
+    transition: all .3s;
+    display: inline-block;
+}
+
+.desktop-nav .desktop-nav-dropdown-trigger:hover p {
+    opacity: .5;
+}
+
+.desktop-nav .desktop-nav-dropdown-trigger:hover .desktop-nav-dropdown {
+    display: block;
+}
+
+.desktop-nav .desktop-nav-dropdown {
+    position: absolute;
+    top: 30px;
+    background: rgba(255, 255, 255, 0.15);
+    backdrop-filter: blur(20px);
+    padding: 25px 30px 23px 30px;
+    width: 200px;
+    border-radius: 10px;
+    border: solid 1px rgba(255, 255, 236, 0.1);
+    display: none;
+}
+
+/* Add a small invisible area to prevent dropdown from closing */
+.desktop-nav .desktop-nav-dropdown::before {
+    content: '';
+    position: absolute;
+    top: -10px;
+    left: 0;
+    width: 100%;
+    height: 10px;
+    background: transparent;
+}
+
+
+
+/* mobile */
+nav {
+    position: fixed;
+    top: 0;
+    z-index: 95;
+    display: none;
+    background: linear-gradient(var(--dark-text-color), rgba(0,0,0,0));
+    width: 100%;
+    height: 100px;
+}
+
+nav .nav-logo {
+    position: fixed;
+    z-index: 98;
+    top: 3%;
+    left: 5%;
+}
+
+nav .nav-logo img {
+    height: 30px;
+}
+
+nav .opener {
+    position: fixed;
+    top: 3%;
+    right: 5%;
+}
+
+nav .opener.active {
+    top: 4.7%;
+}
+
+nav .opener img {
+    height: 21px;
+    cursor: pointer;
+    transition: .2s ease-in-out;
+}
+
+nav #green-hamburger {
+    display: none;
+}
+
+nav #green-hamburger.active {
+    display: block;
+}
+
+nav #white-hamburger.active {
+    display: none;
+}
+
+.sidenav {
+    height: 100%;
+    width: 100%;
+    position: fixed;
+    z-index: 98;
+    backdrop-filter: blur(4px);
+    transition: all .4s;
+    opacity: 0;
+    visibility: hidden;
+    background: rgb(15, 15, 15, 0.94);
+}
+
+.sidenav .mobile-nav-logo {
+    position: absolute;
+    top: 3%;
+    left: 5%;
+}
+
+.sidenav .mobile-nav-logo img {
+    height: 30px;
+}
+  
+.sidenav .closebtn {
+    position: absolute;
+    top: 3.1%;
+    right: 6%;
+    cursor: pointer;
+    z-index: 97;
+}
+  
+.closebtn img {
+    color: white;
+    height: 24px;
+    cursor: pointer;
+}
+  
+.nav-content {
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 90%;
+    margin-left: 5%;
+    font-family: var(--font-main-title);
+}
+
+.nav-content li {
+    list-style: none;
+    color: var(--light-text-color);
+    font-weight: 500 !important;
+    letter-spacing: 1px;
+    font-size: 2em;
+    padding: 7% 0 0 0;
+    text-transform: capitalize;
+}
+
+.nav-content a {
+    text-decoration: none;
+    color: var(--light-text-color);
+    transition: .3s;
+}
+
+.nav-content a:hover {
+    opacity: 0.7;
+}
+
+.nav-content .nav-content-sub {
+    font-size: 0.7em;
+    font-weight: 300;
+    opacity: .5;
+}
+
+.nav-content .nav-content-sub-menu {
+    margin-top: -20px;
+    padding: 0;
+}
+
+.nav-content .nav-content-sub-menu-item {
+    margin-top: -20px;
+}
+
+.nav-content li .button {
+    font-size: 0.9em;
+}
+
+.nav-content .button--calypso {
+    padding: 16px 40px 14px 40px;
+}
+
+.sidenav .socmed {
+    position: absolute;
+    bottom: 5%;
+    left: 15%;
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+}
+
+.sidenav .socmed img {
+    height: 30px;
+}
+
+
+
+
+/* TABLET OPTIMIZATION */
+@media (max-width: 1000px) {
+    .desktop-nav {
+        display: none;
+    }
+
+    nav {
+        display: block;
+    }
+}
+
+
+
+/* MOBILE OPTIMIZATION */
+@media (max-width: 500px) {
+
+}

@@ -1,0 +1,470 @@
+header {
+    position: relative
+}
+
+header .header-content {
+    width: 90%;
+    height: 80vh;
+    margin-left: 5%;
+    overflow: hidden;
+    margin-top: 8%;
+    border-radius: 60px;
+}
+
+header .header-content img {
+    width: 100%;
+    height: auto;
+}
+
+header .header-content .header-content-text {
+    position: absolute;
+    top: 5%;
+    left: 8%;
+    text-align: left;
+}
+
+header .header-content .header-content-text h1 {
+    font-family: var(--font-alt-title);
+    font-weight: 900;
+    font-size: 12em;
+    line-height: 0.8em;
+    color: var(--light-text-color);
+    text-transform: uppercase;
+    text-wrap: balance;
+}
+
+
+/*--------------------- INTRO ---------------------*/
+.intro {
+    padding: 10% 10%;
+    position: relative;
+    z-index: 5;
+}
+
+.intro h2 {
+    font-family: var(--font-main-title);
+    font-size: 5em;
+    line-height: 0.95em;
+    font-weight: 600;
+}
+
+.intro h2 .text-light {
+    color: var(--light-text-color) !important;
+}
+
+.intro h2 .text-accent {
+    color: var(--accent-text-color);
+}
+
+
+/*--------------------- COMPANIES ---------------------*/
+.companies {
+    position: relative;
+    z-index: 20;
+    padding: 0 0 10% 0;
+    margin-top: -12%;
+    z-index: 5;
+}
+
+.companies .companies-title {
+    color: white;
+    padding: 2%;
+    text-align: center;
+}
+
+.companies .companies-title h4 {
+    font-family: var(--font-alt-title);
+    font-weight: 800;
+    font-size: 4em;
+    color: var(--light-text-color);
+    text-transform: uppercase;
+    line-height: 1em;
+}
+
+.companies .companies-logos {
+    width: 80vw;
+    margin-left: 10vw;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr); /* Creates 7 equal columns */
+    gap: 20px; /* Adjust spacing between items */
+    justify-content: center;
+    align-items: center;
+}
+
+.companies .companies-logos .companies-logos-container {
+    width: 100%;
+    padding: 15px 0;
+    text-align: center;
+}
+
+.companies .companies-logos .companies-logos-container img {
+    height: 28px;
+    width: auto;
+    text-align: center;
+    object-fit: contain;
+    filter: grayscale(50%) !important;
+    opacity: .35;
+    transition: .24s ease-out;
+}
+
+.companies .companies-logos .companies-logos-container a:hover > img {
+    opacity: 1;
+}
+
+
+/*--------------------- FUNCTIONS ---------------------*/
+.functions {
+    position: relative;
+    padding: 5% 5%;
+    background-color: #2A2D2F;
+    z-index: 10;
+    margin-top: 15%;
+}
+
+.functions .functions-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 30px;
+}
+
+.functions .functions-container .container-box {
+    flex: 1 1 0; /* This ensures truly equal widths */
+    min-width: 0; /* Prevents content from forcing box to be wider */
+}
+
+.functions .functions-container .box-img-container {
+    width: 100%;
+    height: 70vh;
+    overflow: hidden;
+    border-radius: 40px;
+}
+
+.functions .functions-container .box-img-container img {
+    width: 100%;
+    height: auto;
+    margin-top: -100%;
+}
+
+.functions .functions-container .box-text {
+    padding: 20px;
+}
+
+.functions .functions-container .box-text h3 {
+    font-family: var(--font-alt-title);
+    font-weight: 800;
+    font-size: 2.5em;
+    color: var(--accent-text-color);
+    text-transform: uppercase;
+    line-height: 1em;
+}
+
+.functions .functions-container .box-text p {
+    font-family: var(--font-main-text);
+    font-size: 0.95em;
+    color: var(--light-text-color);
+    font-weight: 300;
+    line-height: 1.5em;
+    text-wrap: balance;
+}
+
+
+/*--------------------- TICKETS ---------------------*/
+.tickets {
+    position: relative;
+    padding: 5% 5%;
+    z-index: 20;
+    margin-top: -20%;
+    padding-bottom: 10%;
+}
+
+.tickets h4 {
+    font-family: var(--font-alt-title);
+    font-weight: 800;
+    font-size: 4em;
+    color: var(--light-text-color);
+    text-transform: uppercase;
+    line-height: 1em;
+    text-align: center;
+}
+
+
+/*--------------------- CONTACT ---------------------*/
+.contact-wrapper {
+    position: relative;
+    /*margin-top: -160vh;
+    padding-bottom: 160vh;*/
+    z-index: 10;
+}
+
+.contact {
+    background-color: #121516;
+    position: relative;
+    padding: 8% 10% 8% 10%;
+}
+
+.contact .contact-title {
+    text-align: center;
+}
+
+.contact .contact-title h2 {
+    font-family: var(--font-alt-title);
+    color: var(--light-text-color);
+    font-size: 9vw;
+    -webkit-text-stroke: 1.5px var(--light-text-color);
+    font-weight: 900;
+}
+
+.contact .contact-title p {
+    font-family: var(--font-main-title);
+    font-weight: 500;
+    font-size: 2.4em;
+    color: var(--light-text-color);
+    margin-top: -30px;
+}
+
+.contact .contact-details {
+    margin-top: 1%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 50px;
+}
+
+.contact .contact-details .contact-person {
+    text-align: center;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.contact .contact-details .contact-person img {
+    height: 250px;
+    border-radius: 50%;
+    border: solid 4px var(--accent-text-color);
+    margin-bottom: 50px;
+}
+
+.contact .contact-details .contact-person .contact-person-text {
+    text-align: left;
+    margin-left: 20px;
+}
+
+.contact .contact-details .contact-person h4 {
+    font-family: var(--font-main-title);
+    font-weight: 700;
+    color: var(--accent-text-color);
+    font-size: 3em;
+    text-transform: uppercase;
+    line-height: 0.95em;
+}
+
+.contact .contact-details .contact-person h5 {
+    font-family: var(--font-main-title);
+    font-weight: 500;
+    color: var(--light-text-color);
+    font-size: 2em;
+    text-transform: uppercase;
+}
+
+.contact .contact-details .contact-person a {
+    font-family: var(--font-main-text);
+    font-weight: 500;
+    color: var(--light-text-color);
+    font-size: 1em;
+    transition: .3s;
+}
+
+.contact .contact-details .contact-person a:hover {
+    color: var(--accent-text-color);
+}
+
+
+footer {
+    height: 260px;
+}
+
+
+/* ---------------------------------------------------------- */
+
+/* DESKTOP OPTIMIZATION */
+@media (min-width: 1600px) {
+    
+}
+
+/* ---------------------------------------------------------- */
+
+/* TABLET OPTIMIZATION */
+@media (max-width: 1275px) {
+    header .header-content {
+        height: 90vh;
+    }
+    
+    header .header-content img {
+        width: auto;
+        height: 100%;
+    }
+
+    .functions {
+        margin-top: 30%;
+    }
+
+    .contact .contact-details {
+        display: block;
+    }
+
+    .contact .contact-details .contact-person {
+        display: block;
+    }
+
+    .contact .contact-details .contact-person .contact-person-text {
+        text-align: center;
+    }
+}
+
+/* TABLET OPTIMIZATION */
+@media (max-height: 820px) {
+
+}
+
+/* ---------------------------------------------------------- */
+
+/* MOBILE OPTIMIZATION */
+@media (max-width: 768px) {
+    header .header-content {
+        height: 80vh;
+        margin-top: 12vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    header .header-content img {
+        width: auto;
+        height: 100%;
+    }
+
+    header .header-content .header-content-text h1 {
+        font-size: 30vw;
+    }
+
+
+    /*----------- INTRO -----------*/
+    .intro {
+        padding: 15% 10%;
+    }
+    
+    .intro h2 {
+        font-size: 3.5em;
+    }
+    
+    .intro h2 .text-light {
+        color: var(--light-text-color) !important;
+    }
+    
+    .intro h2 .text-accent {
+        color: var(--accent-text-color);
+    }
+
+
+    /*----------- COMPANIES -----------*/
+    .companies {
+        position: relative;
+        z-index: 20;
+        padding: 0 0 10% 0;
+        margin-top: 0%;
+    }
+    
+    .companies .companies-title h4 {
+        text-wrap: balance;
+    }
+    
+    .companies .companies-logos {
+        grid-template-columns: repeat(2, 1fr); /* Creates 7 equal columns */
+    }
+
+
+    /*----------- FUNCTIONS -----------*/
+    .functions {
+        padding: 10% 5%;
+        margin-top: 10%;
+    }
+    
+    .functions .functions-container {
+        display: block;
+    }
+    
+    .functions .functions-container .container-box {
+        margin-top: 8%;
+    }
+    
+    .functions .functions-container .box-img-container {
+        width: 100%;
+        height: 60vh;
+    }
+    
+    .functions .functions-container .box-img-container img {
+        width: auto;
+        height: 100%;
+        margin-top: 0;
+    }
+    
+    .functions .functions-container .box-text {
+        padding: 20px;
+    }
+    
+    .functions .functions-container .box-text h3 {
+        font-size: 3em;
+    }
+    
+
+    /*----------- TICKETS -----------*/
+    .tickets {
+        position: relative;
+        padding: 30% 5% !important;
+        z-index: 20;
+        margin-top: 0;
+    }
+
+    .tickets h4 {
+        font-size: 3em;
+    }
+
+
+    /*----------- CONTACT -----------*/
+    .contact {
+        margin-top: 10%;
+        padding-top: 20%;
+        padding-bottom: 20%;
+    }
+
+    .contact .contact-title h2 {
+        font-size: 20vw;
+        line-height: 0.9em;
+        font-weight: 600;
+    }
+
+    .contact .contact-details .contact-person {
+        margin-top: 15%;
+    }
+
+    .contact .contact-details .contact-person .contact-person-text {
+        text-align: center;
+        margin-left: 0px;
+        margin-top: -20px;
+    }
+
+    .contact .contact-details .contact-person h4 {
+        font-size: 2.5em;
+        font-weight: 500;
+    }
+    
+    .contact .contact-details .contact-person h5 {
+        font-size: 1.6em;
+    }
+    
+    .contact .contact-details .contact-person a {
+        font-size: 0.9em;
+    }
+}

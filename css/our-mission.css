@@ -1,0 +1,409 @@
+header {
+    position: relative;
+    padding: 10% 5%;
+}
+
+header .header-content-text h1 {
+    font-family: var(--font-alt-title);
+    color: var(--light-text-color);
+    font-size: 6vw;
+    font-weight: 800;
+    line-height: 0.9em;
+    letter-spacing: -0.01em;
+    text-transform: uppercase;
+    text-wrap: balance;
+    position: relative;
+    z-index: 5;
+}
+
+header .header-img {
+    width: 100%;
+    height: 70vh;
+    overflow: hidden;
+    border-radius: 60px;
+    margin-top: 40px;
+    position: relative;
+    z-index: 10;
+}
+
+header .header-img img {
+    width: 100%;
+    height: auto;
+    margin-top: -10%;
+}
+
+
+/*--------------------- INTRO ---------------------*/
+.intro {
+    padding: 0% 10% 5% 10%;
+    text-align: left;
+    margin-top: -7%;
+}
+
+.intro .intro-content h2 {
+    font-family: var(--font-alt-title);
+    font-size: 10em;
+    color: var(--accent-text-color);
+    font-weight: 900;
+}
+
+.intro .intro-content p {
+    font-family: var(--font-main-text);
+    font-size: 1em;
+    color: var(--light-text-color);
+    font-weight: 300;
+    line-height: 1.5em;
+    text-wrap: balance;
+    margin-top: -25px;
+}
+
+
+/*--------------------- SERVICES SECTION ---------------------*/
+.services {
+    position: relative;
+    z-index: 10;
+    padding-top: 5%;
+}
+
+.services .services-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 20px;
+    margin-top: 10%;
+    width: 90%;
+    margin-left: 5%;
+}
+
+.services .services-container .container-box-bg {
+    position: relative;
+    height: 70vh;
+    width: 29vw;
+    overflow: hidden;
+    border-radius: 60px;
+    z-index: 10;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: default;
+}
+
+.services .services-container .container-box-bg .img-shader {
+    width: 100%;
+    height: 70%;
+    position: absolute;
+    bottom: 0;
+    background: linear-gradient(rgba(0,0,0,0), rgba(0,0,0,0.99));
+}
+
+.services .services-container .container-box-bg .services-container-box-bg-pic {
+    height: 100%;
+    text-align: center;
+    margin-top: -40%;
+}
+
+.services .services-container .container-box-bg .container-box-text {
+    position: absolute;
+    bottom: 50px;
+    left: 50px;
+    z-index: 12;
+}
+
+.services .services-container .container-box-bg .container-box-text h3 {
+    font-family: var(--font-alt-title);
+    font-size: 3em;
+    color: var(--light-text-color);
+    font-weight: 900;
+}
+
+.services .services-container .container-box-bg .container-box-text p {
+    font-family: var(--font-main-text);
+    font-size: 0.95em;
+    color: var(--light-text-color);
+    font-weight: 300;
+    line-height: 1.5em;
+    text-wrap: balance;
+    margin-top: -10px;
+    padding-bottom: 10px;
+}
+
+
+/*--------------------- TEAM ---------------------*/
+.team {
+    position: relative;
+    margin-top: -10%;
+    padding-bottom: 10%;
+}
+
+.team .team-container {
+    display: flex;
+    flex-direction: row;
+}
+
+.team .team-container .team-container-text {
+    height: auto;
+    width: 35%;
+    padding: 0 5%;
+}
+
+.team .team-container .team-container-text h2 {
+    font-family: var(--font-alt-title);
+    font-size: 8em;
+    color: var(--accent-text-color);
+    font-weight: 900;
+    text-transform: uppercase;
+    line-height: 0.9em;
+}
+
+.team .team-container .team-container-text p {
+    font-family: var(--font-main-text);
+    font-size: 0.98em;
+    color: var(--light-text-color);
+    font-weight: 300;
+    line-height: 1.5em;
+    text-wrap: balance;
+    margin-top: -5px;
+    padding-bottom: 10px;
+}
+
+.team .team-container .team-container-group {
+    height: auto;
+    width: 65%;
+}
+
+.team .team-container-group {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 50px;
+    width: 90%;
+    margin-right: 5%;
+}
+
+.team .team-container-group .container-group-wrapper {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 50px; /* Adjust spacing between items */
+    justify-content: center;
+    align-items: center;
+}
+
+.team .team-container-group .container-group-wrapper .group-wrapper-member {
+    background-color: #181A1B;
+    border-radius: 60px;
+    overflow: hidden;
+    position: relative;
+}
+
+.team .team-container-group .container-group-wrapper .group-wrapper-member img {
+    width: 100%;
+}
+
+.team .container-group-wrapper .group-wrapper-member .wrapper-member-info {
+    padding: 40px 35px;
+}
+
+.team .container-group-wrapper .group-wrapper-member .wrapper-member-info h3 {
+    font-family: var(--font-alt-title);
+    font-size: 2.5em;
+    color: var(--light-text-color);
+    font-weight: 900;
+    text-transform: uppercase;
+    line-height: 0.9em;
+}
+
+.team .container-group-wrapper .group-wrapper-member .wrapper-member-info h4 {
+    font-family: var(--font-main-text);
+    font-size: 1em;
+    color: var(--accent-text-color);
+    font-weight: 600;
+    line-height: 1.5em;
+    text-wrap: balance;
+    margin-top: -5px;
+    padding-bottom: 5px;
+}
+
+.team .container-group-wrapper .group-wrapper-member .wrapper-member-info a {
+    font-family: var(--font-main-text);
+    font-size: 0.9em;
+    color: var(--light-text-color);
+    font-weight: 300;
+    line-height: 1.5em;
+    text-wrap: balance;
+    padding-bottom: 10px;
+    text-decoration: none;
+    cursor: pointer;
+    transition: color 0.3s;
+}
+
+.team .container-group-wrapper .group-wrapper-member .wrapper-member-info a:hover {
+    color: var(--accent-text-color);
+}
+
+
+
+
+/* TABLET OPTIMIZATION */
+@media (max-width: 1275px) {
+    /*----------- SERVICES -----------*/
+    .services .services-container {
+        display: block;
+        margin-top: 10%;
+        width: 90%;
+        margin-left: 5%;
+    }
+    
+    .services .services-container .container-box-bg {
+        width: 100%;
+        border-radius: 60px;
+        z-index: 10;
+        margin-top: 5%;
+    }
+
+
+    /*----------- TEAM -----------*/
+    .team {
+        position: relative;
+        margin-top: -40%;
+        padding-bottom: 10%;
+    }
+    
+    .team .team-container {
+        display: block;
+    }
+    
+    .team .team-container .team-container-text {
+        height: auto;
+        width: 90%;
+        padding: 0 5%;
+        margin-bottom: 10%;
+    }
+    
+    .team .team-container .team-container-text h2 {
+        font-size: 7em;
+
+    }
+    
+    .team .team-container .team-container-text p {
+        font-size: 0.94em;
+    }
+    
+    .team .team-container .team-container-group {
+        width: 90%;
+        margin-left: 5%;
+    }
+
+    
+    /*----------- CONTACT -----------*/
+    .contact .contact-details {
+        display: block;
+    }
+
+    .contact .contact-details .contact-person {
+        display: block;
+    }
+
+    .contact .contact-details .contact-person .contact-person-text {
+        text-align: center;
+    }
+}
+
+
+/* ---------------------------------------------------------- */
+
+/* MOBILE OPTIMIZATION */
+@media (max-width: 768px) {
+    /*----------- HEADER -----------*/
+    header {
+        position: relative;
+        padding: 100px 5%;
+    }
+    
+    header .header-content-text h1 {
+        font-size: 3em;
+        text-transform: uppercase;
+        text-wrap: balance;
+    }
+    
+    header .header-img {
+        width: 100%;
+        height: 70vh;
+        overflow: hidden;
+        border-radius: 30px;
+        margin-top: 40px;
+        position: relative;
+        z-index: 10;
+    }
+    
+    header .header-img img {
+        width: auto;
+        height: 100%;
+        margin-top: 0;
+        margin-left: -80%;
+    }
+
+
+    /*----------- INTRO -----------*/
+    .intro {
+        padding: 0% 8% 5% 8%;
+    }
+    
+    .intro .intro-content h2 {
+        font-size: 5em;
+        line-height: 1em;
+    }
+    
+    .intro .intro-content p {
+        margin-top: 3%;
+        font-size: 0.94em;
+    }
+
+
+    /*----------- SERVICES -----------*/
+    .services .services-container .container-box-bg .container-box-text .buttons-container {
+       justify-content: left;
+    }
+
+
+    /*----------- TEAM -----------*/
+    .team {
+        position: relative;
+        margin-top: 20%;
+        padding-bottom: 10%;
+        text-align: center;
+    }
+    
+    .team .team-container {
+        display: block;
+    }
+    
+    .team .team-container .team-container-text {
+        height: auto;
+        width: 98%;
+        padding: 0 1%;
+        margin-bottom: 10%;
+    }
+    
+    .team .team-container .team-container-text h2 {
+        font-size: 5em;
+
+    }
+
+    .team .team-container-group {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        gap: 50px;
+        width: 90%;
+        margin-right: 5%;
+    }
+    
+    .team .team-container-group .container-group-wrapper {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        gap: 50px; /* Adjust spacing between items */
+        justify-content: center;
+        align-items: center;
+    }
+    
+}

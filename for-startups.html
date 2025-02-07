@@ -1,0 +1,368 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>For Startups - STRIVE</title>
+
+    <!-- Meta Description -->
+    <meta name="description" content="STRIVE connects you directly with innovative startups hungry for fresh talent. You'll gain real-world experience while companies get your unique energy and perspectives.">
+    <meta name="keywords" content="Strive, STRIVE, Strive Fellowship, Fellowship, Aaltoes Strive, Aaltoes, Fellowship Program, Aalto fellowship, Strive for startups, Startup fellowship, Fellowship espoo, Fellowship Finland, Strive Finland, Strive Aalto">
+    <meta name="author" content="STRIVE">
+    <meta property="og:title" content="STRIVE">
+    <meta property="og:description" content="STRIVE connects you directly with innovative startups hungry for fresh talent. You'll gain real-world experience while companies get your unique energy and perspectives.">
+    <meta property="og:image" content="https://striveforstartups.com/imgs/strive-link-img.png">
+    <meta property="og:url" content="https://striveforstartups.com">
+    
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="STRIVE for Startups">
+    <meta name="twitter:description" content="STRIVE connects you directly with innovative startups hungry for fresh talent. You'll gain real-world experience while companies get your unique energy and perspectives.">
+    <meta name="twitter:image" content="https://striveforstartups.com/imgs/strive-link-img.png">
+    
+    <!-- Optional: Specify image dimensions -->
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-LTXX93KCXS"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+
+        gtag('config', 'G-LTXX93KCXS');
+    </script>
+
+    <!-- HotJar Analytics -->
+    <script>
+        (function (c, s, q, u, a, r, e) {
+            c.hj=c.hj||function(){(c.hj.q=c.hj.q||[]).push(arguments)};
+            c._hjSettings = { hjid: a };
+            r = s.getElementsByTagName('head')[0];
+            e = s.createElement('script');
+            e.async = true;
+            e.src = q + c._hjSettings.hjid + u;
+            r.appendChild(e);
+        })(window, document, 'https://static.hj.contentsquare.net/c/csq-', '.js', 5293260);
+    </script>
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap" rel="stylesheet">
+
+    <!-- Bootstrap CSS only -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+
+    <!-- AOS -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+    <!-- GSAP from CDN -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.0/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/ScrollTrigger.min.js"></script>
+
+    <!-- Locomotive Scroll -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/locomotive-scroll@4.1.3/dist/locomotive-scroll.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/locomotive-scroll@4.1.3/dist/locomotive-scroll.min.js"></script>
+
+    <!-- Parallax scrolling effect --><!-- http://pixelcog.github.io/parallax.js/ -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+    <script src="parallax/parallax.min.js"></script>
+    
+    <!-- Shortcut icon -->
+    <link rel="icon" type="image/gif" href="imgs/icons/STRIVE_primary_logo_accent_favicon.svg">
+    <link rel="apple-touch-icon" href="imgs/icons/STRIVE_primary_logo_accent_favicon.svg"/>
+    
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/main.css?v=1.1.0"/>
+    <link rel="stylesheet" href="css/for-startups.css?v=1.1.0"/>
+    <link rel="stylesheet" href="css/nav.css?v=1.1.0"/>
+    <link rel="stylesheet" href="css/footer.css?v=1.1.0">
+  </head>
+  <body>
+    <!-- LOADING... -->
+    <div class="loading" id="loading">
+        <div class="container"></div>
+    </div>
+
+
+    <!--------------------------------------> 
+    <!-- DESKTOP NAVIGATION BAR -->
+    <!-------------------------------------->
+    <section class="desktop-nav" id="desktop_nav">
+        <div class="desktop-nav-logo-container">
+            <a href="https://striveforstartups.com"><img id="logo_white" src="imgs/icons/STRIVE_main_logo_accent.svg"><!--<img id="logo_accent" src="imgs/icons/STRIVE_logo.svg">--></a>
+        </div>
+        <div class="desktop-nav-buttons-container">
+            <ul>
+                <li><a class="text-3" href="our-mission">our mission</a></li>
+                <li class="desktop-nav-dropdown-trigger">
+                    <p class="text-3">the programs</p>
+                    <div class="desktop-nav-dropdown">
+                        <a class="text-3" href="https://fellowship.striveforstartups.com">the fellowship</a>
+                        <a class="text-3" href="startup-crawl">startup crawl</a>
+                    </div>
+                </li>
+                <li><a class="text-3" href="for-startups">for startups</a></li>
+                <li><a class="nav-apply-button nav-button--calypso text-2-bold" id="contact_btn" href="https://aaltoes2025.typeform.com/to/v4MFNLc4"><div class="button--calypso-wrap"><span>Join the Platform</span></div></a></li>
+            </ul>
+        </div>
+    </section>
+
+
+    <!-------------------------------------->
+    <!-- MOBILE NAVIGATION -->
+    <!-------------------------------------->
+    <nav id="nav">
+        <div class="nav-logo">
+            <a href="https://striveforstartups.com"><img id="logo_white" src="imgs/icons/STRIVE_main_logo_accent.svg"></a>
+        </div>
+        <div class="nav-open-button">
+            <span class="opener " id="opener" onclick="openNav()"><img id="white-hamburger" src="imgs/icons/hamburger-white.svg"></span>
+        </div>
+        <div id="mySidenav" class="sidenav">
+            <div class="mobile-nav-logo">
+                <a href="https://striveforstartups.com"><img src="imgs/icons/STRIVE_main_logo_accent.svg" alt=""></a>
+            </div>
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()"><img src="imgs/icons/close.svg"></a>
+            <div class="nav-content">
+                <ul>
+                    <li onclick="closeNav()"><a class="" href="our-mission">Our Mission</a></li>
+                    <li><span class="nav-content-sub">The Programs </span></li>
+                    <ul class="nav-content-sub-menu">
+                        <li onclick="closeNav()"><a class="" href="https://fellowship.striveforstartups.com">The Fellowship</a></li>
+                        <li class="nav-content-sub-menu-item" onclick="closeNav()"><a class="" href="startup-crawl">Startup Crawl</a></li>
+                    </ul>
+                    <li onclick="closeNav()"><a class="" href="for-startups">For Startups</a></li>
+                    <li onclick="closeNav()"><a class="button button--calypso text-2-bold" id="contact_btn" href="https://aaltoes2025.typeform.com/to/v4MFNLc4">Join the Platform</a></li>
+                </ul>
+            </div>
+            <div class="socmed">
+                <div class="socmed-box">
+                    <a href="https://www.linkedin.com/company/strive-for-startups"><img src="imgs/icons/linkedin.svg" alt=""></a>
+                </div>
+                <div class="socmed-box">
+                    <a href="https://www.instagram.com/strive_for_startups/"><img src="imgs/icons/ig.svg" alt=""></a>
+                </div>
+                <div class="socmed-box">
+                    <a href="coming-soon"><img src="imgs/icons/x.svg" alt=""></a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+
+    <!-------------------------------------->
+    <!-- PAGE START -->
+    <!-------------------------------------->
+    <div id="smooth-wrapper">
+        <div id="smooth-content">
+            <!---------------------------------------------------------------------------->
+
+
+            <!--------------------------->
+            <!-- HEADER -->
+            <!--------------------------->
+            <header class="header" id="header">
+                <div class="header-bg">
+                    <div class="header-bg-shadow"></div>
+                    <img src="imgs/for-startups.png" alt="">
+                </div>
+                <div class="header-content animate" data-type="fade-in" data-duration="0.7s" data-delay="0.1s">
+                    <div class="header-content-text">
+                        <h1>WHY WORK WITH STRIVE?</h1>
+                        <p>At Strive, we provide startups with the next generation of talent. By partnering with us, you gain access to a diverse pool of driven students who are eager to make a difference and contribute to the growth of your company.</p>
+                        <div class="buttons-container">
+                            <a class="button-style button--calypso secondary-btn" href="mailto:artem@striveforstartups.com"><div class="button--calypso-wrap"><span>Get In Touch</span></div></a>
+                        </div>
+                    </div>
+                </div>
+            </header>
+
+
+            <!--------------------------->
+            <!-- BENEFITS FOR STARTUPS -->
+            <!--------------------------->
+            <section class="benefits" id="benefits">
+                <div class="benefits-row">
+                    <div class="row-box">
+                        <h2>HOW WE <br>BENEFIT YOU</h2>
+                    </div>
+                    <div class="row-box">
+                        <div class="row-box-content">
+                            <h3>ACCESS TO TOP TALENT</h3>
+                            <p>Connect with a wide range of students with specialized skills and fresh perspectives.</p>
+                        </div>
+                        <div class="row-box-content">
+                            <h3>tailored matches</h3>
+                            <p>Our matching system ensures you connect with students who align with your startup’s needs and culture.</p>
+                        </div>
+                    </div>
+                    <div class="row-box">
+                        <div class="row-box-content">
+                            <h3>cost-effective hiring</h3>
+                            <p>Attract talent at an early stage in their career, without the overhead of traditional recruitment methods.</p>
+                        </div>
+                        <div class="row-box-content">
+                            <h3>diversity of skills</h3>
+                            <p>Whether you need tech, marketing, business development, or creative talent, Strive has you covered.</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+
+            <!--------------------------->
+            <!-- BENEFITS FOR STARTUPS -->
+            <!--------------------------->
+            <section class="stats" id="stats">
+                <div class="stats-img">
+                    <img class="stats-img-pic" src="imgs/stats-img.jpg" alt="STRIVE Stats WITH OHTO PENTIKÄINEN">
+                </div>
+            </section>
+
+
+            <!--------------------------->
+            <!-- STARTUP COMPANIES -->
+            <!--------------------------->
+            <section class="companies" id="companies">
+                <div class="companies-title animate" data-type="fade-in" data-duration="0.7s" data-delay="0.15s">
+                    <h4>Who's Thriving With Us</h4>
+                </div>
+                <div class="companies-logos">
+                    <div class="companies-logos-container animate" data-type="fade-in" data-duration="0.7s" data-delay="0.2s">
+                        <a href="https://doublepoint.com" target="_blank"><img src="imgs/startup_logos/doublepoint.png" alt="STRIVE STARTUPS LOGO"></a>
+                    </div>
+                    <div class="companies-logos-container animate" data-type="fade-in" data-duration="0.7s" data-delay="0.225s">
+                        <a href="https://www.shipdaze.com/" target="_blank"><img src="imgs/startup_logos/daze.png" alt="STRIVE STARTUPS LOGO"></a>
+                    </div>
+                    <div class="companies-logos-container animate" data-type="fade-in" data-duration="0.7s" data-delay="0.25s">
+                        <a href="https://droppe.com/" target="_blank"><img src="imgs/startup_logos/droppe.png" alt="STRIVE STARTUPS LOGO"></a>
+                    </div>
+                    <div class="companies-logos-container animate" data-type="fade-in" data-duration="0.7s" data-delay="0.275s">
+                        <a href="https://www.happeo.com/" target="_blank"><img src="imgs/startup_logos/happeo.png" alt="STRIVE STARTUPS LOGO"></a>
+                    </div>
+                    <div class="companies-logos-container animate" data-type="fade-in" data-duration="0.7s" data-delay="0.3s">
+                        <a href="https://www.huuva.io/" target="_blank"><img src="imgs/startup_logos/huuva.png" alt="STRIVE STARTUPS LOGO"></a>
+                    </div>
+                    <div class="companies-logos-container animate" data-type="fade-in" data-duration="0.7s" data-delay="0.325s">
+                        <a href="https://www.intergridsystems.com/" target="_blank"><img src="imgs/startup_logos/intergrid.png" alt="STRIVE STARTUPS LOGO"></a>
+                    </div>
+                    <div class="companies-logos-container animate" data-type="fade-in" data-duration="0.7s" data-delay="0.35s">
+                        <a href="https://www.inven.ai/" target="_blank"><img src="imgs/startup_logos/inven.png" alt="STRIVE STARTUPS LOGO"></a>
+                    </div>
+                    <div class="companies-logos-container animate" data-type="fade-in" data-duration="0.7s" data-delay="0.375s">
+                        <a href="https://www.komuhomes.com/" target="_blank"><img src="imgs/startup_logos/komuhomes.png" alt="STRIVE STARTUPS LOGO"></a>
+                    </div>
+                    <div class="companies-logos-container animate" data-type="fade-in" data-duration="0.7s" data-delay="0.4s">
+                        <a href="https://www.resq-club.com/" target="_blank"><img src="imgs/startup_logos/resq.png" alt="STRIVE STARTUPS LOGO"></a>
+                    </div>
+                    <div class="companies-logos-container animate" data-type="fade-in" data-duration="0.7s" data-delay="0.425s">
+                        <a href="https://www.shook.digital/" target="_blank"><img src="imgs/startup_logos/shook.png" alt="STRIVE STARTUPS LOGO"></a>
+                    </div>
+                    <div class="companies-logos-container animate" data-type="fade-in" data-duration="0.7s" data-delay="0.45s">
+                        <a href="https://singa.com/" target="_blank"><img src="imgs/startup_logos/singa.png" alt="STRIVE STARTUPS LOGO"></a>
+                    </div>
+                    <div class="companies-logos-container animate" data-type="fade-in" data-duration="0.7s" data-delay="0.475s">
+                        <a href="https://www.swarmia.com/" target="_blank"><img src="imgs/startup_logos/swarmia.png" alt="STRIVE STARTUPS LOGO"></a>
+                    </div>
+                    <div class="companies-logos-container animate" data-type="fade-in" data-duration="0.7s" data-delay="0.5s">
+                        <a href="https://yousician.com/" target="_blank"><img src="imgs/startup_logos/yousician.png" alt="STRIVE STARTUPS LOGO"></a>
+                    </div>
+                    <div class="companies-logos-container animate" data-type="fade-in" data-duration="0.7s" data-delay="0.525s">
+                        <a href="https://zevoy.com/" target="_blank"><img src="imgs/startup_logos/zevoy.png" alt="STRIVE STARTUPS LOGO"></a>
+                    </div>
+                </div>
+            </section>
+
+
+            <!--------------------------->
+            <!-- CONTACT SECTION -->
+            <!--------------------------->
+            <section class="contact-wrapper">
+                <section class="contact" id="contact">
+                    <div class="contact-title">
+                        <h2>READY TO TEAM UP?</h2>
+                        <h3>Reach out to us and let’s build the future with the best talent out there.</h3>
+                    </div>
+                    <div class="contact-details">
+                        <div class="contact-person"> 
+                            <img src="imgs/alex.jpeg" alt="STRIVE Alexander Warén">
+                            <div class="contact-person-text">
+                                <h4>Alexander Warén</h4>
+                                <h5>Chief Executive Officer</h5>
+                                <a href="mailto:alex@striveforstartups.com">alex@striveforstartups.com</a>
+                            </div>
+                        </div>
+                        <div class="contact-person">
+                            <img src="imgs/samuli.jpeg" alt="STRIVE Samuli Hartikainen">
+                            <div class="contact-person-text">
+                                <h4>Samuli Hartikainen</h4>
+                                <h5>Head of Fellowship</h5>
+                                <a href="mailto:sam@striveforstartups.com">sam@striveforstartups.com</a>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </section>
+
+
+            <!--------------------------->
+            <!-- FOOTER -->
+            <!--------------------------->
+            <footer class="footer" id="footer">
+                <div class="footer-container">
+                    <div class="footer-container-logo footer-container-block">
+                        <img src="imgs/icons/STRIVE_logo_prime.svg" alt="STRIVE Logo">
+                    </div>
+                    <div class="footer-container-text footer-container-block">
+                        <p>STRIVE for Startups | Aaltoes 2025</p>
+                    </div>
+                    <div class="footer-container-socmed footer-container-block">
+                        <div class="socmed-box">
+                            <a href="https://www.linkedin.com/company/strive-for-startups"><img src="imgs/icons/linkedin.svg" alt=""></a>
+                        </div>
+                        <div class="socmed-box">
+                            <a href="https://www.instagram.com/strive_for_startups/"><img src="imgs/icons/ig.svg" alt=""></a>
+                        </div>
+                        <div class="socmed-box">
+                            <a href="coming-soon"><img src="imgs/icons/x.svg" alt=""></a>
+                        </div>
+                    </div>
+                    <div class="footer-container-top footer-container-block">
+                        <a href="https://aaltoes.com" target="_blank">aaltoes.com</a>
+                    </div>
+                </div>
+                <div class="footer-spacer"></div>
+            </footer>
+            
+
+
+            <!---------------------------------------------------------------------------->
+        </div>
+    </div>
+
+
+
+    <!-- GSAP LIBRARY -->
+    <script src="js/TweenMax.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js"></script>
+
+    <!-- GLOBAL SCRIPT -->
+    <script src="js/main.js?v=1.0.0"></script>
+    <script src="js/for-startups.js?v=1.1.0"></script>
+
+    <!-- ScrollSpeed Script -->
+    <script src="scrollSpeed/scrollspeed.js" type="text/javascript"></script>
+
+    <!-- AOS JS -->
+    <script type="text/javascript" src="aos/aos.js"></script>
+    <script type="text/javascript">
+        AOS.init();
+    </script>
+    </body>
+</html>

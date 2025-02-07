@@ -1,0 +1,488 @@
+header  {
+    position: relative;
+    padding: 20% 5%;
+}
+
+header .header-bg {
+    position: absolute;
+    height: 65vh;
+    width: 100%;
+    overflow: hidden;
+    right: 0;
+    margin-top: -10%;
+}
+
+header .header-bg .header-bg-shadow {
+    position: absolute;
+    height: auto;
+    width: 65vw;
+    height: 100%;
+    right: 0;
+    background: linear-gradient(60deg, rgba(12, 14, 15, 1) 10%, rgba(12, 14, 15, 0) 150%);
+    z-index: 5;
+}
+
+header .header-bg img {
+    position: absolute;
+    width: 65vw;
+    height: auto;
+    right: 0;
+    z-index: 4;
+}
+
+header .header-content {
+    position: relative;
+    background: rgba(255, 255, 255, 0.15);
+    backdrop-filter: blur(20px);
+    padding: 4%;
+    border-radius: 60px;
+    margin-top: -12%;
+    width: 50%;
+}
+
+header .header-content .header-content-text h1 {
+    font-family: var(--font-alt-title);
+    color: var(--light-text-color);
+    font-size: 7vw;
+    font-weight: 800;
+    line-height: 0.85em;
+    letter-spacing: -0.01em;
+    text-transform: uppercase;
+    text-wrap: balance;
+}
+
+header .header-content .header-content-text p {
+    font-family: var(--font-main-text);
+    font-size: 1em;
+    color: var(--light-text-color);
+    font-weight: 300;
+    line-height: 1.5em;
+    text-wrap: balance;
+    padding-bottom: 10px;
+}
+
+
+/*--------------------- BENEFITS ---------------------*/
+.benefits {
+    position: relative;
+    padding: 8% 5% 8% 10%;
+    text-align: center;
+    margin-top: -15%;
+    background-color: var(--main-bg-color);
+    z-index: 10;
+}
+
+.benefits .benefits-row {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: top;
+    gap: 20px;
+}
+
+.benefits .benefits-row h2 {
+    font-family: var(--font-alt-title);
+    font-size: 7em;
+    font-weight: 900;
+    line-height: 0.9em;
+    color: var(--light-text-color);
+}
+
+.benefits .benefits-row > *:first-child {
+    flex: 0 0 40%;  /* 40% width */
+ }
+ 
+.benefits .benefits-row > *:not(:first-child) {
+    flex: 0 0 30%;  /* 30% width for others */
+ }
+
+.benefits .benefits-row .row-box {
+    text-align: left;
+}
+
+.benefits .row-box-content {
+    padding-bottom: 20%;
+}
+
+.benefits .benefits-row .row-box-content h3 {
+    font-family: var(--font-alt-title);
+    font-size: 2.5em;
+    font-weight: 900;
+    text-transform: uppercase;
+    background: var(--gradient-color);
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.benefits .benefits-row .row-box-content p {
+    font-family: var(--font-main-text);
+    font-size: 1em;
+    color: var(--light-text-color);
+    font-weight: 300;
+    line-height: 1.2em;
+    text-wrap: balance;
+    margin-top: -5px;
+    width: 70%;
+}
+
+
+/*--------------------- STATS ---------------------*/
+.stats {
+    position: relative;
+    z-index: 15;
+}
+
+.stats .stats-img {
+    width: 90%;
+    height: 80vh;
+    margin-left: 5%;
+    overflow: hidden;
+    border-radius: 60px;
+}
+
+.stats .stats-img img {
+    width: 100%;
+    height: auto;
+    margin-top: -25%;
+}
+
+
+/*--------------------- STARTUP LOGOS ---------------------*/
+.companies {
+    position: relative;
+    z-index: 20;
+    padding: 0 0 10% 0;
+    margin-top: -25%;
+}
+
+.companies .companies-title {
+    color: white;
+    padding: 2%;
+    text-align: center;
+}
+
+.companies .companies-title h4 {
+    font-family: var(--font-alt-title);
+    font-weight: 800;
+    font-size: 4em;
+    color: var(--light-text-color);
+    text-transform: uppercase;
+    line-height: 1em;
+}
+
+.companies .companies-logos {
+    width: 80vw;
+    margin-left: 10vw;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr); /* Creates 7 equal columns */
+    gap: 20px; /* Adjust spacing between items */
+    justify-content: center;
+    align-items: center;
+}
+
+.companies .companies-logos .companies-logos-container {
+    width: 100%;
+    padding: 15px 0;
+    text-align: center;
+}
+
+.companies .companies-logos .companies-logos-container img {
+    height: 28px;
+    width: auto;
+    text-align: center;
+    object-fit: contain;
+    filter: grayscale(50%) !important;
+    opacity: .35;
+    transition: .24s ease-out;
+}
+
+.companies .companies-logos .companies-logos-container a:hover > img {
+    opacity: 1;
+}
+
+
+/*--------------------- CONTACT ---------------------*/
+.contact-wrapper {
+    position: relative;
+    /*margin-top: -160vh;
+    padding-bottom: 160vh;*/
+    z-index: 10;
+    margin-top: 20%;
+}
+
+.contact {
+    background-color: #121516;
+    position: relative;
+    padding: 6% 10% 6% 10%;
+}
+
+.contact .contact-title {
+    text-align: center;
+}
+
+.contact .contact-title h2 {
+    font-family: var(--font-alt-title);
+    color: var(--light-text-color);
+    font-size: 6vw;
+    -webkit-text-stroke: 1.5px var(--light-text-color);
+    font-weight: 900;
+}
+
+.contact .contact-title h3 {
+    font-family: var(--font-main-title);
+    color: var(--light-text-color);
+    font-size: 2vw;
+    font-weight: 500;
+    width: 50%;
+    text-wrap: balance;
+    margin: auto;
+}
+
+.contact .contact-title p {
+    font-family: var(--font-main-title);
+    font-weight: 500;
+    font-size: 2.4em;
+    color: var(--light-text-color);
+    margin-top: -30px;
+}
+
+.contact .contact-details {
+    margin-top: 4%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 50px;
+}
+
+.contact .contact-details .contact-person {
+    text-align: center;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.contact .contact-details .contact-person img {
+    height: 250px;
+    border-radius: 50%;
+    border: solid 4px var(--accent-text-color);
+    margin-bottom: 50px;
+}
+
+.contact .contact-details .contact-person .contact-person-text {
+    text-align: left;
+    margin-left: 20px;
+}
+
+.contact .contact-details .contact-person h4 {
+    font-family: var(--font-main-title);
+    font-weight: 700;
+    color: var(--accent-text-color);
+    font-size: 3em;
+    text-transform: uppercase;
+    line-height: 0.95em;
+}
+
+.contact .contact-details .contact-person h5 {
+    font-family: var(--font-main-title);
+    font-weight: 500;
+    color: var(--light-text-color);
+    font-size: 2em;
+    text-transform: uppercase;
+}
+
+.contact .contact-details .contact-person a {
+    font-family: var(--font-main-text);
+    font-weight: 500;
+    color: var(--light-text-color);
+    font-size: 1em;
+    transition: .3s;
+}
+
+.contact .contact-details .contact-person a:hover {
+    color: var(--accent-text-color);
+
+}
+
+
+
+/* TABLET OPTIMIZATION */
+@media (max-width: 1275px) {
+    /*----------- COMPANIES -----------*/
+    .companies {
+        margin-top: -70%;
+        padding: 20% 0;
+    }
+
+    /*----------- CONTACT -----------*/
+    .contact .contact-details {
+        display: block;
+    }
+
+    .contact .contact-details .contact-person {
+        display: block;
+    }
+
+    .contact .contact-details .contact-person .contact-person-text {
+        text-align: center;
+    }
+}
+
+
+/* ---------------------------------------------------------- */
+
+/* MOBILE OPTIMIZATION */
+@media (max-width: 768px) {
+    /*----------- HEADER -----------*/
+    header {
+        height: 100%;
+        padding: 40% 5%;
+    }
+
+    header .header-bg {
+        height: 100%;
+        width: 100%;
+    }
+    
+    header .header-bg .header-bg-shadow {
+        width: 100%;
+        height: auto;
+    }
+    
+    header .header-bg img {
+        width: auto;
+        height: 100%;
+        opacity: .1;
+    }
+    
+    header .header-content {
+        border-radius: 20px;
+        width: 100%;
+        padding: 7%;
+    }
+    
+    header .header-content .header-content-text h1 {
+        font-size: 5em;
+    }
+    
+    header .header-content .header-content-text p {
+        font-size: 0.94em;
+    }
+
+    header .header-content .buttons-container {
+        justify-content: left;
+    }
+
+
+     /*----------- BENEFITS -----------*/
+     .benefits {
+        padding: 12% 5% 12% 10%;
+    }
+    
+    .benefits .benefits-row {
+        display: block;
+    }
+    
+    .benefits .benefits-row h2 {
+        font-size: 5em;
+        padding-bottom: 10%;
+    }
+    
+    .benefits .benefits-row .row-box {
+        text-align: left;
+    }
+    
+    .benefits .row-box-content {
+        padding-bottom: 10%;
+    }
+    
+    .benefits .benefits-row .row-box-content p {
+        font-size: 0.94em;
+    }
+    
+
+    /*----------- STATS -----------*/
+    .stats {
+        position: relative;
+        z-index: 15;
+    }
+    
+    .stats .stats-img {
+        width: 90%;
+        height: 80vh;
+        margin-left: 5%;
+        overflow: hidden;
+        border-radius: 60px;
+    }
+    
+    .stats .stats-img img {
+        width: auto;
+        height: 100%;
+        margin-top: 0;
+        margin-left: -100%;
+    }
+
+
+    /*----------- STATS -----------*/
+    .companies {
+        position: relative;
+        z-index: 20;
+        padding: 0 0 10% 0;
+        margin-top: 20%;
+    }
+    
+    .companies .companies-title h4 {
+        text-wrap: balance;
+    }
+    
+    .companies .companies-logos {
+        grid-template-columns: repeat(2, 1fr); /* Creates 7 equal columns */
+    }
+    
+    
+
+    /*----------- CONTACT -----------*/
+    .contact {
+        margin-top: 10%;
+        padding-top: 20%;
+        padding-bottom: 20%;
+    }
+
+    .contact .contact-title h2 {
+        font-size: 20vw;
+        line-height: 0.9em;
+        font-weight: 600;
+        text-wrap: balance;
+    }
+    
+    .contact .contact-title h3 {
+        font-size: 2em;
+        width: 100%;
+        text-wrap: balance;
+    }
+
+    .contact .contact-details .contact-person {
+        margin-top: 15%;
+    }
+
+    .contact .contact-details .contact-person .contact-person-text {
+        text-align: center;
+        margin-left: 0px;
+        margin-top: -20px;
+    }
+
+    .contact .contact-details .contact-person h4 {
+        font-size: 2.5em;
+        font-weight: 500;
+    }
+    
+    .contact .contact-details .contact-person h5 {
+        font-size: 1.6em;
+    }
+    
+    .contact .contact-details .contact-person a {
+        font-size: 0.9em;
+    }
+
+    
+}
