@@ -44,12 +44,14 @@ p {
 /*----------------------------------------------------------*/
 @font-face {
     font-family: "Thunder";
-    src: url(../fonts/Thunder-VF.ttf);
+    src: url(../fonts/Thunder-VF.ttf) format('truetype');
+    font-display: swap;
 }
 
 @font-face {
-    font-family: "TT Bluescreens";
-    src: url(../fonts/TT-Bluescreens-Variable.ttf);
+    font-family: "ZT Floogn";
+    src: url(../fonts/ZTFloogn-ExtraBold.ttf) format('truetype');
+    font-display: swap;
   }
 
 
@@ -59,7 +61,7 @@ p {
 :root {
     /* fonts */
     --font-main-title: 'Thunder';
-    --font-alt-title: 'TT Bluescreens';
+    --font-alt-title: 'ZT Floogn';
     --font-main-text: 'Manrope', sans-serif;
 
     /* colors */
@@ -271,8 +273,20 @@ p {
 }
 
 .buttons-container .secondary-btn:hover {
-    background: #303030;
+    background: var(--accent-text-color);
     color: var(--light-text-color);
+}
+
+.buttons-container .third-btn {
+    background: transparent;
+    border: solid 2px var(--light-text-color);
+    color: var(--light-text-color);
+    transition: all .3s;
+}
+
+.buttons-container .third-btn:hover {
+    background: var(--light-text-color);
+    color: var(--dark-text-color);
 }
 
 
@@ -316,6 +330,8 @@ p {
 
 .button--calypso-wrap {
     display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .button--calypso span {
@@ -466,7 +482,7 @@ p {
 .loading.hidden {
     -webkit-animation: fadeOut 1s;
     animation: fadeOut 1s;
-    animation-delay: 0.5s;
+    animation-delay: 0s;
     transition-timing-function: ease-out;
     animation-fill-mode: forwards;
   }
@@ -530,12 +546,110 @@ p {
 
 
 
+/*----------------------------------------------------------*/
+/* LOADER ANIMATION */
+/*----------------------------------------------------------*/
+.cookies-popup {
+    position: fixed;
+    z-index: 90;
+    bottom: 30px;
+    right: 30px;
+    background: rgba(23, 28, 30, 0.8);
+    border-radius: 30px;
+    padding: 30px;
+    backdrop-filter: blur(10px);
+    box-shadow: 0 0 18px rgba(0, 0, 0, 0.3);
+    width: 600px;
+}
+
+.cookies-popup h5 {
+    font-family: var(--font-main-title);
+    font-size: 1.5em;
+    color: var(--light-text-color);
+}
+
+.cookies-popup p {
+    font-family: var(--font-main-text);
+    font-size: 0.9em;
+    font-weight: 200;
+    line-height: 1.4em;
+    color: var(--light-text-color);
+    margin-bottom: 20px;
+}
+
+.cookies-popup .popup-content-buttons {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.cookies-popup .popup-content-buttons button {
+    font-family: var(--font-main-title);
+    font-size: 1.2em;
+    color: var(--light-text-color);
+    padding: 12px 30px 10px 30px;
+    cursor: pointer;
+    border: none;
+    text-decoration: none;
+    border-radius: 6px;
+    transition: all .2s;
+}
+
+.cookies-popup .popup-content-buttons button:hover {
+    opacity: 0.6;
+}
+
+.cookies-popup .popup-content-buttons .button-accept {
+    background: var(--gradient-color);
+    color: var(--main-accent-color);
+}
+
+.cookies-popup .popup-content-buttons .button-deny {
+    background: var(--main-accent-color);
+    color: var(--main-bg-color);
+    margin-left: 10px;
+}
+
+
+
 /* ---------------------------------------------------------- */
+
+/* TABLET OPTIMIZATION */
+@media (max-width: 820px) {
+    .cookies-popup {
+        right: 5%;
+        width: 90vw;
+    }
+
+    .cookies-popup h5 {
+        font-size: 1.8em;
+    }
+
+    .cookies-popup .popup-content-buttons {
+        flex-direction: column;
+        gap: 10px;
+        width: 100%;
+    }
+
+    .cookies-popup .popup-content-buttons button {
+        width: 100%;
+        font-size: 1.3em;
+    }
+
+    .cookies-popup .popup-content-buttons .button-deny {
+    margin-left: 0;
+}
+}
+
 
 /* MOBILE OPTIMIZATION */
 @media (max-width: 768px) {
     .buttons-container {
-        justify-content: center;
+        margin-top: 10px;
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        text-align: center;
     }
 
     .buttons-container .button-style {
@@ -543,10 +657,11 @@ p {
         border-radius: 4px;
         font-family: var(--font-main-title);
         font-weight: 400;
-        font-size: 0.9em;
+        font-size: 1.3em;
         line-height: 1.5em;
         letter-spacing: 0.01em;
         cursor: pointer;
+        text-align: center;
     }
 }
 

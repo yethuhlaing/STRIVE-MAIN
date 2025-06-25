@@ -104,8 +104,9 @@ header .header-img img {
 
 .services .services-container .container-box-bg .container-box-text {
     position: absolute;
+    width: 84%;
     bottom: 50px;
-    left: 50px;
+    left: 8%;
     z-index: 12;
 }
 
@@ -231,7 +232,7 @@ header .header-img img {
     line-height: 1.5em;
     text-wrap: balance;
     padding-bottom: 10px;
-    text-decoration: none;
+    text-decoration: underline;
     cursor: pointer;
     transition: color 0.3s;
 }
@@ -360,8 +361,21 @@ header .header-img img {
 
 
     /*----------- SERVICES -----------*/
+    .services .services-container .container-box-bg .container-box-text {
+        left: 10%;
+        width: 80%;
+    }
+
     .services .services-container .container-box-bg .container-box-text .buttons-container {
        justify-content: left;
+    }
+
+    .services .services-container .container-box-bg .box-bg-pic-1 {
+        margin-left: -50%;
+    }
+
+    .services .services-container .container-box-bg .box-bg-pic-2 {
+        margin-left: -80%;
     }
 
 
@@ -369,7 +383,7 @@ header .header-img img {
     .team {
         position: relative;
         margin-top: 20%;
-        padding-bottom: 10%;
+        padding-bottom: 20%;
         text-align: center;
     }
     

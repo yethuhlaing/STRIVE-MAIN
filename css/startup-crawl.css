@@ -211,7 +211,6 @@ header .header-content .header-content-text h1 {
     font-family: var(--font-alt-title);
     color: var(--light-text-color);
     font-size: 9vw;
-    -webkit-text-stroke: 1.5px var(--light-text-color);
     font-weight: 900;
 }
 

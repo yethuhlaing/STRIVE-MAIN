@@ -27,17 +27,17 @@
     <meta property="og:image:height" content="630">
 
     <!-- Google tag (gtag.js) -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-LTXX93KCXS"></script>
+    <!--<script async src="https://www.googletagmanager.com/gtag/js?id=G-LTXX93KCXS"></script>
     <script>
         window.dataLayer = window.dataLayer || [];
         function gtag(){dataLayer.push(arguments);}
         gtag('js', new Date());
 
         gtag('config', 'G-LTXX93KCXS');
-    </script>
+    </script>-->
 
     <!-- HotJar Analytics -->
-    <script>
+    <!--<script>
         (function (c, s, q, u, a, r, e) {
             c.hj=c.hj||function(){(c.hj.q=c.hj.q||[]).push(arguments)};
             c._hjSettings = { hjid: a };
@@ -47,7 +47,7 @@
             e.src = q + c._hjSettings.hjid + u;
             r.appendChild(e);
         })(window, document, 'https://static.hj.contentsquare.net/c/csq-', '.js', 5293260);
-    </script>
+    </script>-->
 
     <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -57,9 +57,6 @@
     <!-- Bootstrap CSS only -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
 
-    <!-- AOS -->
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-
     <!-- GSAP from CDN -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.0/gsap.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/ScrollTrigger.min.js"></script>
@@ -67,20 +64,16 @@
     <!-- Locomotive Scroll -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/locomotive-scroll@4.1.3/dist/locomotive-scroll.min.css">
     <script src="https://cdn.jsdelivr.net/npm/locomotive-scroll@4.1.3/dist/locomotive-scroll.min.js"></script>
-
-    <!-- Parallax scrolling effect --><!-- http://pixelcog.github.io/parallax.js/ -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
-    <script src="parallax/parallax.min.js"></script>
     
     <!-- Shortcut icon -->
-    <link rel="icon" type="image/gif" href="imgs/icons/STRIVE_primary_logo_accent_favicon.svg">
-    <link rel="apple-touch-icon" href="imgs/icons/STRIVE_primary_logo_accent_favicon.svg"/>
+    <link rel="icon" type="image/gif" href="imgs/icons/STRIVE_Icon_Accent_Theme_Favicon.svg">
+    <link rel="apple-touch-icon" href="imgs/icons/STRIVE_Icon_Accent_Theme_Favicon.svg"/>
     
     <!-- CSS -->
-    <link rel="stylesheet" href="css/main.css?v=1.1.0"/>
+    <link rel="stylesheet" href="css/main.css?v=1.1.3"/>
     <link rel="stylesheet" href="css/our-mission.css?v=1.1.0"/>
-    <link rel="stylesheet" href="css/nav.css?v=1.1.0"/>
-    <link rel="stylesheet" href="css/footer.css?v=1.1.0">
+    <link rel="stylesheet" href="css/nav.css?v=1.1.1"/>
+    <link rel="stylesheet" href="css/footer.css?v=1.1.1">
   </head>
   <body>
     <!-- LOADING... -->
@@ -107,7 +100,7 @@
                     </div>
                 </li>
                 <li><a class="text-3" href="for-startups">for startups</a></li>
-                <li><a class="nav-apply-button nav-button--calypso text-2-bold" id="contact_btn" href="https://aaltoes2025.typeform.com/to/v4MFNLc4"><div class="button--calypso-wrap"><span>Join the Platform</span></div></a></li>
+                <li><a class="nav-apply-button nav-button--calypso text-2-bold" id="contact_btn" href="https://platform.striveforstartups.com/applicants/apply" target="_blank"><div class="button--calypso-wrap"><span>Strive Platform</span></div></a></li>
             </ul>
         </div>
     </section>
@@ -131,13 +124,15 @@
             <div class="nav-content">
                 <ul>
                     <li onclick="closeNav()"><a class="" href="our-mission">Our Mission</a></li>
-                    <li><span class="nav-content-sub">The Programs </span></li>
+                    <li onclick="closeNav()"><a class="" href="https://fellowship.striveforstartups.com">The Fellowship</a></li>
+                    <li onclick="closeNav()"><a class="" href="startup-crawl">Startup Crawl</a></li>
+                    <!--<li><span class="nav-content-sub">The Programs </span></li>
                     <ul class="nav-content-sub-menu">
                         <li onclick="closeNav()"><a class="" href="https://fellowship.striveforstartups.com">The Fellowship</a></li>
                         <li class="nav-content-sub-menu-item" onclick="closeNav()"><a class="" href="startup-crawl">Startup Crawl</a></li>
-                    </ul>
+                    </ul>-->
                     <li onclick="closeNav()"><a class="" href="for-startups">For Startups</a></li>
-                    <li onclick="closeNav()"><a class="button button--calypso text-2-bold" id="contact_btn" href="https://aaltoes2025.typeform.com/to/v4MFNLc4">Join the Platform</a></li>
+                    <li onclick="closeNav()"><a class="button button--calypso text-2-bold" id="contact_btn" href="https://platform.striveforstartups.com/applicants/apply">Strive Platform</a></li>
                 </ul>
             </div>
             <div class="socmed">
@@ -154,6 +149,19 @@
         </div>
     </nav>
 
+
+    <!-------------------------------------->
+    <!-- COOKIES OPTIONS POPUP -->
+    <!-------------------------------------->
+    <div class="cookies-popup" id="cookieConsent" style="display: none;">
+        <div class="popup-content">
+            <h5>We Value Your Privacy</h5>
+            <p>We use cookies to enhance your browsing experience, serve personalized content, and analyze our traffic. By clicking "Accept All", you consent to our use of cookies. Visit our Cookie Policy to learn more or manage your preferences.</p>
+            <div class="popup-content-buttons">
+                <button class="button-accept" onclick="acceptCookies()">Accept</button> <button class="button-deny" onclick="denyCookies()">Deny</button>
+            </div>
+        </div>
+    </div>
 
 
     <!-------------------------------------->
@@ -173,7 +181,7 @@
                         <h1 class="animate" data-type="fade-in" data-duration="0.7s" data-delay="0.1s">STRIVE connects top students with innovative startups, empowering careers and fueling growth through talent.</h1>
                     </div>
                     <div class="header-img">
-                        <img class="header-img-pic" src="imgs/our-mission1.jpg" alt="STRIVE Our Mission">
+                        <img class="header-img-pic" src="imgs/our-mission1.webp" alt="STRIVE Our Mission">
                     </div>
                 </div>
             </header>
@@ -197,7 +205,7 @@
                 <div class="services-container">
                     <div class="services-container-box">
                         <div class="container-box-bg">
-                            <img class="services-container-box-bg-pic" src="imgs/bg-bot.png" alt="">
+                            <img class="box-bg-pic-1 services-container-box-bg-pic" src="imgs/bg-bot.webp" alt="">
                             <div class="img-shader"></div>
                             <div class="container-box-text">
                                 <h3>STARTUP CRAWL</h3>
@@ -210,7 +218,7 @@
                     </div>
                     <div class="services-container-box">
                         <div class="container-box-bg">
-                            <img class="services-container-box-bg-pic" src="imgs/leap-img.png" alt="">
+                            <img class="box-bg-pic-2 services-container-box-bg-pic" src="imgs/leap-img.webp" alt="">
                             <div class="img-shader"></div>
                             <div class="container-box-text">
                                 <h3>FELLOWSHIP PROGRAM</h3>
@@ -223,7 +231,7 @@
                     </div>
                     <div class="services-container-box">
                         <div class="container-box-bg">
-                            <img class="services-container-box-bg-pic" src="imgs/stats-img.jpg" alt="">
+                            <img class="box-bg-pic-3 services-container-box-bg-pic" src="imgs/stats-img.webp" alt="">
                             <div class="img-shader"></div>
                             <div class="container-box-text">
                                 <h3>FOR STARTUPS</h3>
@@ -246,14 +254,14 @@
                     <div class="team-container-text animate" data-type="fade-in" data-duration="0.7s" data-delay="0.1s">
                         <h2>meet the team</h2>
                         <p>We're a young team of multidisciplinary backgrounds from different parts of the world. What brings us together? A shared belief that startups can build amazing things that make people's lives better.</p>
-                        <div class="buttons-container">
+                        <!--<div class="buttons-container">
                             <a class="button-style button--calypso primary-btn" href="mailto:artem@striveforstartups.com"><div class="button--calypso-wrap"><span>Join Us</span></div></a>
-                        </div>
+                        </div>-->
                     </div>
                     <div class="team-container-group">
                         <div class="container-group-wrapper">
                              <div class="group-wrapper-member animate" data-type="fade-in" data-duration="0.7s" data-delay="0.15s">
-                                <img src="imgs/alex.jpeg" alt="STRIVE Alexander Warén">
+                                <img src="imgs/alex.webp" alt="STRIVE Alexander Warén">
                                 <div class="wrapper-member-info">
                                     <h3>ALEXANDER WARÉN</h3>
                                     <h4>Chief Executive Officer</h4>
@@ -268,20 +276,38 @@
                                     <a href="mailto:samuli@striveforstartups.com">samuli@striveforstartups.com</a>
                                 </div>
                              </div>
+
                              <div class="group-wrapper-member animate" data-type="fade-in" data-duration="0.7s" data-delay="0.15s">
-                                <img src="imgs/artem.png" alt="STRIVE Artem Kislukhin">
+                                <img src="imgs/artem.webp" alt="STRIVE Artem Kislukhin">
                                 <div class="wrapper-member-info">
-                                    <h3>Artem kislukhin</h3>
+                                    <h3>ARTEM KISLUKHIN</h3>
                                     <h4>Growth & Partnerships</h4>
                                     <a href="mailto:artem@striveforstartups.com">artem@striveforstartups.com</a>
                                 </div>
                              </div>
                              <div class="group-wrapper-member animate" data-type="fade-in" data-duration="0.7s" data-delay="0.2s">
-                                <img src="imgs/anette.png" alt="STRIVE Missing Person">
+                                <img src="imgs/ye.webp" alt="STRIVE Ye Thu Hlaing">
                                 <div class="wrapper-member-info">
-                                    <h3>ANETTE HEINONEN</h3>
-                                    <h4>Bro Ditched Us 4 FR8</h4>
-                                    <a href="#">:/</a>
+                                    <h3>YE THU HLAING</h3>
+                                    <h4>Chief Technology Officer</h4>
+                                    <a href="mailto:ye@striveforstartups.com">ye.thu@striveforstartups.com</a>
+                                </div>
+                             </div>
+
+                             <div class="group-wrapper-member animate" data-type="fade-in" data-duration="0.7s" data-delay="0.15s">
+                                <img src="imgs/jason.webp" alt="STRIVE Jason Hu">
+                                <div class="wrapper-member-info">
+                                    <h3>JASON HU</h3>
+                                    <h4>Head of Design</h4>
+                                    <a href="mailto:jason.hu@aaltoes.com">jason.hu@aaltoes.com</a>
+                                </div>
+                             </div>
+                             <div class="group-wrapper-member animate" data-type="fade-in" data-duration="0.7s" data-delay="0.2s">
+                                <img src="imgs/jazen.webp" alt="STRIVE Missing Person">
+                                <div class="wrapper-member-info">
+                                    <h3>JAZEN MATHEW</h3>
+                                    <h4>Head of Ambassadors</h4>
+                                    <a href="mailto:mathew.jazen@gmail.com">mathew.jazen@gmail.com</a>
                                 </div>
                              </div>
                         </div>
@@ -291,29 +317,50 @@
 
 
             <!--------------------------->
-            <!-- CONTACT -->
+            <!-- FOOTER -->
             <!--------------------------->
             <footer class="footer" id="footer">
                 <div class="footer-container">
-                    <div class="footer-container-logo footer-container-block">
-                        <img src="imgs/icons/STRIVE_logo_prime.svg" alt="STRIVE Logo">
-                    </div>
-                    <div class="footer-container-text footer-container-block">
-                        <p>STRIVE for Startups | Aaltoes 2025</p>
-                    </div>
-                    <div class="footer-container-socmed footer-container-block">
-                        <div class="socmed-box">
-                            <a href="https://www.linkedin.com/company/strive-for-startups"><img src="imgs/icons/linkedin.svg" alt=""></a>
+                    <div class="container-logo container-box">
+                        <img src="imgs/icons/STRIVE_main_logo_accent.svg" alt="Strive Logo">
+                        <div class="buttons-container">
+                            <a class="button-style button--calypso primary-btn" href="mailto:artem@striveforstartups.com"><div class="button--calypso-wrap"><span>Go to Platform</span></div></a>
                         </div>
-                        <div class="socmed-box">
-                            <a href="https://www.instagram.com/strive_for_startups/"><img src="imgs/icons/ig.svg" alt=""></a>
-                        </div>
-                        <div class="socmed-box">
-                            <a href="coming-soon"><img src="imgs/icons/x.svg" alt=""></a>
+                        <div class="footer-container-socmed">
+                            <div class="socmed-box">
+                                <a href="https://www.linkedin.com/company/strive-for-startups"><img src="imgs/icons/linkedin.svg" alt=""></a>
+                            </div>
+                            <div class="socmed-box">
+                                <a href="https://www.instagram.com/strive_for_startups/"><img src="imgs/icons/ig.svg" alt=""></a>
+                            </div>
+                            <div class="socmed-box">
+                                <a href="coming-soon"><img src="imgs/icons/x.svg" alt=""></a>
+                            </div>
                         </div>
                     </div>
-                    <div class="footer-container-top footer-container-block">
-                        <a href="https://aaltoes.com" target="_blank">aaltoes.com</a>
+                    <div class="container-footnav-1 container-footnav container-box">
+                        <ul class="footnav-ul">
+                            <li><a href="our-mission">Our Mission</a></li>
+                            <li><a href="https://fellowship.striveforstartups.com">Fellowship Program</a></li>
+                            <li><a href="startup-crawl">Startup Crawl</a></li>
+                            <li><a href="for-startups">For Startups</a></li>
+                        </ul>
+                    </div>
+                    <div class="container-footnav container-box">
+                        <ul class="footnav-ul">
+                            <li><a href="https://keen-addition-9a2.notion.site/STRIVE-Privacy-Policy-2025-46b86c5ec4004d4195dca50b180bfc85" target="_blank">Privacy Policy</a></li>
+                            <li><a href="coming-soon">Company</a></li>
+                            <li><a href="coming-soon">Brand Guidelines</a></li>
+                            <li></li>
+                        </ul>
+                    </div>
+                    <div class="container-footnav container-box">
+                        <ul class="footnav-contact">
+                            <li>contact@striveforstartups.com</li>
+                            <li>Puumiehenkuja 5, 02150 Espoo</li>
+                            <li>Y-tunnus:  3-1234567</li>
+                            <li><a class="thinner" href="https://interractagency.com" target="_blank">designed and developed by <img src="imgs/icons/primary-logo-icon.svg" alt="Interract Agency"></a></li>
+                        </ul>
                     </div>
                 </div>
                 <div class="footer-spacer"></div>

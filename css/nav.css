@@ -219,7 +219,7 @@ nav #white-hamburger.active {
     width: 100%;
     position: fixed;
     z-index: 98;
-    backdrop-filter: blur(4px);
+    backdrop-filter: blur(10px);
     transition: all .4s;
     opacity: 0;
     visibility: hidden;
@@ -241,7 +241,7 @@ nav #white-hamburger.active {
     top: 3.1%;
     right: 6%;
     cursor: pointer;
-    z-index: 97;
+    z-index: 99;
 }
   
 .closebtn img {
@@ -266,7 +266,7 @@ nav #white-hamburger.active {
     letter-spacing: 1px;
     font-size: 2em;
     padding: 7% 0 0 0;
-    text-transform: capitalize;
+    text-transform: uppercase;
 }
 
 .nav-content a {
@@ -286,8 +286,9 @@ nav #white-hamburger.active {
 }
 
 .nav-content .nav-content-sub-menu {
-    margin-top: -20px;
+    /*margin-top: -20px;*/
     padding: 0;
+    margin: 0;
 }
 
 .nav-content .nav-content-sub-menu-item {

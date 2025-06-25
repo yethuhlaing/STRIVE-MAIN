@@ -261,16 +261,6 @@ document.addEventListener("DOMContentLoaded", function () {
     });
 
 
-     /* Contact and Footer */
-     /*locoScroll.on('scroll', ({ scroll }) => {
-        const contactWrapper = document.querySelector('.contact-wrapper');
-        if (!contactWrapper) return;
-        const scrollPos = scroll.y;
-        const moveAmount = scrollPos * 0.5;
-        contactWrapper.style.transform = `translate3d(0, ${moveAmount}px, 0)`;
-    });*/
-
-
     /* ------------------------------------- */
     /* SCROLL UPDATES */
     /* ------------------------------------- */
@@ -278,3 +268,48 @@ document.addEventListener("DOMContentLoaded", function () {
     locoScroll.on("scroll", ScrollTrigger.update);
     ScrollTrigger.refresh();
 });
+
+
+/* ------------------------------------- */
+/* COUNTDOWN TIMER */
+/* ------------------------------------- */
+// Set your event date and time here
+// Format: 'YYYY-MM-DD HH:MM:SS'
+const eventDate = new Date('2025-09-18 00:00:00').getTime();
+
+// Update the display with the event date
+const eventDateElement = document.getElementById('eventDate');
+eventDateElement.textContent = new Date(eventDate).toLocaleDateString('en-US', {
+    weekday: 'long',
+    year: 'numeric',
+    month: 'long',
+    day: 'numeric',
+});
+
+function updateCountdown() {
+    const now = new Date().getTime();
+    const distance = eventDate - now;
+
+    if (distance < 0) {
+        // Event has passed
+        document.getElementById('countdown').style.display = 'none';
+        document.getElementById('expiredMessage').style.display = 'block';
+        return;
+    }
+
+    // Calculate time units
+    const days = Math.floor(distance / (1000 * 60 * 60 * 24));
+    const hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+    const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+    const seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+    // Update the display
+    document.getElementById('days').textContent = days.toString().padStart(2, '0');
+    document.getElementById('hours').textContent = hours.toString().padStart(2, '0');
+    document.getElementById('minutes').textContent = minutes.toString().padStart(2, '0');
+    document.getElementById('seconds').textContent = seconds.toString().padStart(2, '0');
+}
+
+// Update countdown immediately and then every second
+updateCountdown();
+setInterval(updateCountdown, 1000);

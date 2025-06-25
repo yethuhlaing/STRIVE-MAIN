@@ -224,7 +224,6 @@ header .header-content .header-content-text p {
     font-family: var(--font-alt-title);
     color: var(--light-text-color);
     font-size: 6vw;
-    -webkit-text-stroke: 1.5px var(--light-text-color);
     font-weight: 900;
 }
 
