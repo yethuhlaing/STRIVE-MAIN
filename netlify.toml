@@ -1,0 +1,22 @@
+[build]
+  publish = "."
+
+[[redirects]]
+  from = "/coming-soon"
+  to = "/coming-soon.html"
+  status = 200
+
+[[redirects]]
+  from = "/for-startups"
+  to = "/for-startups.html"
+  status = 200
+
+[[redirects]]
+  from = "/our-mission"
+  to = "/our-mission.html"
+  status = 200
+
+[[redirects]]
+  from = "/startup-crawl"
+  to = "/startup-crawl.html"
+  status = 200
